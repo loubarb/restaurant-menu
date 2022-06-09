@@ -1,5 +1,12 @@
 body {
   font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background: url('./img/restaurant-menu-bg.jpg') fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+h1 {
+  margin-bottom: 0;
 }
 
 .container {
@@ -28,6 +35,13 @@ body {
 
 button {
   margin: 5px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .menu-container {
@@ -45,8 +59,13 @@ button {
 .menu-item-header {
   display: flex;
   justify-content: space-between;
-  max-height: 100px;
-  padding: 0 25px;
+  max-height: 30px;
+  /* padding: 0 25px; */
+  border-bottom: 1px dotted;
+}
+
+h4 {
+  margin: 5px;
 }
 
 .menu-item img {
@@ -56,11 +75,7 @@ button {
 }
 
 
-@media (min-width: 768px) {
-
-  .container {
-    margin: 50px;
-  }
+@media (min-width: 1024px) {
   
   .button-container {
     display: flex;
@@ -73,15 +88,14 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    /* margin: 0 150px; */
     align-content: center;
     justify-items: center;
   }
   
   .menu-item {
     display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 70px;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 50px;
     max-width: 50rem;
     column-gap: 20px;
   }
@@ -89,7 +103,6 @@ button {
   .menu-item-header {
     display: flex;
     justify-content: space-between;
-    max-height: 50px;
   }
   
   .menu-item-desc {
@@ -97,9 +110,4 @@ button {
     grid-row-start: 2;
   }
   
-  .menu-item img {
-    width: 200px;
-    height: 150px;
-    border: 1px solid;
-  }
 }
