@@ -6,7 +6,7 @@ for (i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', e => {
     e.preventDefault()
     const filter = e.target.dataset.filter
-    // console.log(filter)
+  
 
     menuItems.forEach((item) => {
       if (filter == "all") {
